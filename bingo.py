@@ -9,7 +9,10 @@ contents = ['"wyld"',"Leon versteht\nnicht, was Valle\nsagt",
             "Gespräch\nüber\nUni","Valle macht\nsich über\njemanden\nlustig",
             "Idee für\nzukünftigen\nPodcast","insider-\nJoke",'"das schneiden\nwir später\nraus"',
             "gegenseitiges\nUnterbrechen","Gespräch\nüber\nCorona","Selbstdisse",'"Worüber haben\nwir nochmal\ngeredet?"',
-            "Bemerkung zur\nAudienzgröße","Tastatur-\ngeräusche","Referenz\nan\nJohnny",'"ich stimme\nvoll zu"',"Valle\nbeleidigt\njemanden"]
+            "Bemerkung zur\nAudienzgröße","Tastatur-\ngeräusche","Referenz\nan\nJohnny",'"ich stimme\nvoll zu"',"Valle\nbeleidigt\njemanden",
+            "Valle macht\nschlechten\nWortwitz","Valle weiß\nkomische\nFakten","Valle ist\nschüchtern und\nsagt fast\nnichts",
+            "Leon redet\nmit\nDialekt","Leon\nstottert","das das\nregt mich\nsowieso am\nmeisten auf",
+            "ich hab\nmir\nletztens ...\nangeschaut","Leon redet\n5min durch",'Leon sagt\nmindestens 10x\n"sowieso"']
 
 def contents_order():
     """returns contents in a random order"""
@@ -20,7 +23,7 @@ def contents_order():
         ret.append(contents[index])
         contents.pop(index)
 
-    ret.insert(11,"Leon & Valle\nPodcast\nBingo!")
+    ret.insert(len(contents)-13,"Leon & Valle\nPodcast\nBingo!")
 
     if(len(ret) < 25):
         while (len(ret)<25):
